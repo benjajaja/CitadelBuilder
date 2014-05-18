@@ -1,0 +1,10 @@
+package com.gipsyking.CitadelClient;
+
+public enum Icon {
+	FORTIFICATION_GROUP,
+	FORTIFICATION_PRIVATE,
+	REINFORCEMENT_GROUP,
+	REINFORCEMENT_PRIVATE,
+	INFO,
+	BYPASS
+}
