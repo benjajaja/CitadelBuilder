@@ -10,7 +10,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 
-@Mod(modid="citadelbuilder", name="CitadelBuilder", version="1.3")
+@Mod(modid="citadelbuilder", name="CitadelBuilder", version="1.4")
 public class CitadelBuilder {
 
 	public static Logger logger = Logger.getLogger("CitadelClient");

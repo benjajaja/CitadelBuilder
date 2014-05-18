@@ -8,8 +8,6 @@ import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentData;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -34,7 +32,7 @@ public class IconList {
 		this.map.put(Icon.REINFORCEMENT_GROUP, new HUDIcon(mc, "textures/gui/achievement/achievement_background.png", 26, 202, 26, 26));
 		this.map.put(Icon.REINFORCEMENT_PRIVATE, new HUDIcon(mc, "textures/gui/achievement/achievement_background.png", 0, 202, 26, 26));
 		
-		ItemStack privateItem = Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.unbreaking, Enchantment.unbreaking.getMinLevel()));
+		ItemStack privateItem = new ItemStack(Items.writable_book);
 		this.map.get(Icon.REINFORCEMENT_GROUP).setItem(privateItem);
 		this.map.get(Icon.REINFORCEMENT_PRIVATE).setItem(privateItem);
 		
